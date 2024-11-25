@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #d4a5eb, #a5b9ee);
+            color: #fff;
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 2rem;
+        }
+
+        button {
+            background: linear-gradient(to right, #ff6a88, #ff3e6c);
+            color: #fff;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button:active {
+            transform: scale(1);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #d4a5eb, #a5b9ee);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My Website
+    </header>
+    <main>
+        <h1>Welcome to My Website</h1>
+        <div class="button-container">
+            <button id="biodataButton">Biodata</button>
+            <button id="resumeButton">Resume</button>
+        </div>
+    </main>
+    <footer>
+        © 2024 Vinay. All rights reserved.
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
